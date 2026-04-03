@@ -2,7 +2,7 @@
 FROM eclipse-temurin:17-jdk-jammy
 
 # 2. 애플리케이션 JAR 파일을 컨테이너로 복사
-ARG JAR_FILE=build/libs/*.jar
+ARG JAR_FILE=build/libs/ecs-practice-starter-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar
 
 # 3. 컨테이너가 실행될 때 실행할 명령어
